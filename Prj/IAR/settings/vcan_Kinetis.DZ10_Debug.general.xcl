@@ -1,0 +1,17 @@
+"D:\APPs\arm\bin\armproc.dll" 
+
+"D:\APPs\arm\bin\armjlink2.dll" 
+
+"D:\study\IntelligentCar\山外K60参考代码V5.3（支持FX、FN和DNZ）\第二章\GPIO_LED\Prj\IAR\DZ10_Debug\Exe\vcan_Kinetis.out" 
+
+--plugin="D:\APPs\arm\bin\armbat.dll" 
+
+--device_macro="D:\APPs\arm\config\debugger\NXP\Kxx.dmac" 
+
+--device_macro="D:\APPs\arm\config\debugger\NXP\Kxx_Trace.dmac" 
+
+--flash_loader="D:\APPs\arm\config\flashloader\NXP\FlashK60Dxxx128K.board" 
+
+
+
+
