@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"D:\APPs\common\bin\cspybat" -f "D:\study\IntelligentCar\山外K60参考代码V5.3（支持FX、FN和DNZ）\第二章\GPIO_LED\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.general.xcl" --backend -f "D:\study\IntelligentCar\山外K60参考代码V5.3（支持FX、FN和DNZ）\第二章\GPIO_LED\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.driver.xcl" 
+"D:\APPs\common\bin\cspybat" -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.general.xcl" --backend -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\APPs\common\bin\cspybat" -f "D:\study\IntelligentCar\山外K60参考代码V5.3（支持FX、FN和DNZ）\第二章\GPIO_LED\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\study\IntelligentCar\山外K60参考代码V5.3（支持FX、FN和DNZ）\第二章\GPIO_LED\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.driver.xcl" 
+"D:\APPs\common\bin\cspybat" -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.driver.xcl" 
 
 @echo off 
 :end

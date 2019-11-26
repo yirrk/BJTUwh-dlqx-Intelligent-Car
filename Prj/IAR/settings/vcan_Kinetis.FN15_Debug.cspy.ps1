@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "D:\APPs\common\bin\cspybat" -f "D:\study\IntelligentCar\山外K60参考代码V5.3（支持FX、FN和DNZ）\第二章\GPIO_LED\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.general.xcl" --backend -f "D:\study\IntelligentCar\山外K60参考代码V5.3（支持FX、FN和DNZ）\第二章\GPIO_LED\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.driver.xcl" 
+& "D:\APPs\common\bin\cspybat" -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.general.xcl" --backend -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.driver.xcl" 
 }
 else
 {
-& "D:\APPs\common\bin\cspybat" -f "D:\study\IntelligentCar\山外K60参考代码V5.3（支持FX、FN和DNZ）\第二章\GPIO_LED\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\study\IntelligentCar\山外K60参考代码V5.3（支持FX、FN和DNZ）\第二章\GPIO_LED\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.driver.xcl" 
+& "D:\APPs\common\bin\cspybat" -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.FN15_Debug.driver.xcl" 
 }
