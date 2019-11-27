@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "D:\APPs\common\bin\cspybat" -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.general.xcl" --backend -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.driver.xcl" 
+& "D:\APPs\common\bin\cspybat" -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\LED\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.general.xcl" --backend -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\LED\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.driver.xcl" 
 }
 else
 {
-& "D:\APPs\common\bin\cspybat" -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.driver.xcl" 
+& "D:\APPs\common\bin\cspybat" -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\LED\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\LED\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.driver.xcl" 
 }
