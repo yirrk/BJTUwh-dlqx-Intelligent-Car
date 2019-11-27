@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"D:\APPs\common\bin\cspybat" -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.general.xcl" --backend -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.driver.xcl" 
+"D:\APPs\common\bin\cspybat" -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\LED\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.general.xcl" --backend -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\LED\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"D:\APPs\common\bin\cspybat" -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.driver.xcl" 
+"D:\APPs\common\bin\cspybat" -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\LED\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\LED\Prj\IAR\settings\vcan_Kinetis.DZ10_Debug.driver.xcl" 
 
 @echo off 
 :end
