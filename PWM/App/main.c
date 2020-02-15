@@ -1,7 +1,6 @@
 #include "common.h"
 #include "include.h"
 
-//【山外电机驱动】打破权威的限制，还原电路的本色。
 //注意：山外电机驱动 是 加入 MOS 管 隔离反相的，IO 输出 低电平，经过 MOS 管后会反相，变成 高电平，反正既然。
 
 
@@ -39,7 +38,7 @@
 #define MOTOR1_PWM_IO  FTM0_CH2
 #define MOTOR2_PWM_IO  FTM0_CH3
 #define MOTOR3_PWM_IO  FTM0_CH4
-#define MOTOR4_PWM_IO  FTM0_CH0
+#define MOTOR4_PWM_IO  FTM1_CH0
 
 //滑行模式下，频率应该是 30~100。  1
 //常规模式下，频率应该是 20k 左右  0
@@ -55,25 +54,30 @@ void main()
     uint8 i = 0;
     printf("\n*****FTM 电机测试 测试*****\n");
 
-    ftm_pwm_init(MOTOR_FTM, MOTOR1_PWM,MOTOR_HZ,100);      //初始化 电机 PWM
-    ftm_pwm_init(MOTOR_FTM, MOTOR2_PWM,MOTOR_HZ,100);
-    //IO管脚配置
+    ftm_pwm_init(MOTOR_FTM, MOTOR1_PWM,MOTOR_HZ,0);      //初始化 电机 PWM
+    ftm_pwm_init(MOTOR_FTM, MOTOR2_PWM,MOTOR_HZ,0);
+     ftm_pwm_init(MOTOR_FTM, MOTOR3_PWM,MOTOR_HZ,0);
+      ftm_pwm_init(FTM1, MOTOR4_PWM,MOTOR_HZ,0);
+    //IO管脚配
     //gpio_init(MOTOR1_IO,GPO,LOW);
     //gpio_init(MOTOR2_IO,GPO,LOW);
 
 
     while(1)
     {
-        i += 10;
-        if(i > 50)
-        {
-            i = 0;
-        }
-        ftm_pwm_duty(MOTOR_FTM, MOTOR1_PWM,i);
-        ftm_pwm_duty(MOTOR_FTM, MOTOR2_PWM,i);
+        ftm_pwm_duty(MOTOR_FTM, MOTOR1_PWM,90);
+        ftm_pwm_duty(MOTOR_FTM, MOTOR2_PWM,30);
+        ftm_pwm_duty(MOTOR_FTM, MOTOR3_PWM,30);
+        ftm_pwm_duty(FTM1, MOTOR4_PWM,90);
+        DELAY_MS(1000);
 
-        DELAY_MS(500);
 
+
+        ftm_pwm_duty(MOTOR_FTM, MOTOR1_PWM,30);
+        ftm_pwm_duty(MOTOR_FTM, MOTOR2_PWM,90);
+        ftm_pwm_duty(MOTOR_FTM, MOTOR3_PWM,90);
+        ftm_pwm_duty(FTM1, MOTOR4_PWM,30);
+        DELAY_MS(1000);
 
 
     }
