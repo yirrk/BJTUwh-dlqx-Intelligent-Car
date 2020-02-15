@@ -1,0 +1,17 @@
+"D:\APPs\arm\bin\armproc.dll" 
+
+"D:\APPs\arm\bin\armjlink2.dll" 
+
+"D:\study\Github\demo\BJTUwh-dlqx-Intelligent-Car\LED_KEY\Prj\IAR\FN15_Debug\Exe\vcan_Kinetis.out" 
+
+--plugin="D:\APPs\arm\bin\armbat.dll" 
+
+--device_macro="D:\APPs\arm\config\debugger\NXP\Kxx.dmac" 
+
+--device_macro="D:\APPs\arm\config\debugger\NXP\Kxx_Trace.dmac" 
+
+--flash_loader="D:\APPs\arm\config\flashloader\Freescale\FlashK60Fxxx128K.board" 
+
+
+
+
